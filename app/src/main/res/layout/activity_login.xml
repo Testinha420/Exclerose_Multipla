@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.startapps.notamil.view.fragment.SupportActivity">
+
+
+    <EditText
+        android:id="@+id/campo_login_email"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:height="45dp"
+        android:layout_marginTop="60dp"
+        android:hint="E-mail"
+        android:textSize="14sp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/campo_login_senha"
+        android:imeOptions="actionSend"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:inputType="textPassword"
+        android:height="45dp"
+        android:layout_marginTop="12dp"
+        android:hint="Senha"
+        android:textSize="14sp"
+        android:padding="12dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:background="@android:color/white"
+        android:id="@+id/bt_login"
+        android:textColor="#000000"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="16sp"
+        android:onClick="onClickLogin"
+        android:nestedScrollingEnabled="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Cadastro"
+            android:background="@null"
+            android:id="@+id/bt_cadastro"
+            android:layout_gravity="left|top"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:onClick="onClickSignup"
+            android:nestedScrollingEnabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Esqueceu a senha"
+            android:background="@null"
+            android:id="@+id/bt_esqueceu"
+            android:layout_gravity="right|top"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:onClick="onClickForgotPassword" />
+
+
+    </FrameLayout>
+
+
+            <!-- <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="45dp"
+                 android:layout_marginLeft="@dimen/home_layout_margin"
+                 android:layout_marginRight="@dimen/home_layout_margin"
+                 android:textAllCaps="false"
+                 android:text="@string/home_entrar_facebook"
+                 android:background="@color/facebook_blue"
+                 android:id="@+id/bt_entrar_facebook"
+                 android:textColor="@android:color/white"
+                 android:textStyle="bold|normal"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginBottom="30dp"
+                 android:textSize="14sp" />-->
+
+    <FrameLayout
+        android:id="@+id/loadingContainer"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</FrameLayout>
